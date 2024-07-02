@@ -1,0 +1,33 @@
+.header {
+  padding: $spacing-lg 0;
+  backdrop-filter: blur(10px);
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    text-decoration: none;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__menu-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-link {
+    padding: $spacing-lg;
+    transition: color $transition-fast;
+
+    &.is-active,
+    &:hover {
+      color: $color-purple-dark;
+    }
+  }
+}

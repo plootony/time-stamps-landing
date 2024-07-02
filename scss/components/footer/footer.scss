@@ -1,0 +1,9 @@
+.footer {
+  padding: $spacing-lg 0;
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
