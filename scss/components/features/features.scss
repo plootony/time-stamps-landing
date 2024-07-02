@@ -1,0 +1,36 @@
+.features {
+  margin-top: $spacing-xl * 2;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: $spacing-lg;
+  }
+
+  &__item {
+    padding: $spacing-lg;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-md;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 10px 2px rgb(35, 33, 55);
+  }
+
+  &__item-title {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__item-subtitle {
+    line-height: 1.4;
+  }
+
+  &__item-img {
+    max-width: 100%;
+    height: auto;
+  }
+}

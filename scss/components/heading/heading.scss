@@ -1,0 +1,11 @@
+.heading {
+  padding: $spacing-xl 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 64px;
+    font-weight: 600;
+  }
+}
