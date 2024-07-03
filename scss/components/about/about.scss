@@ -1,0 +1,19 @@
+.about {
+  margin-top: $spacing-lg;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-lg;
+  }
+
+  &__info {
+    font-size: 18px;
+
+    p {
+      margin-bottom: $spacing-md;
+      line-height: 1.4;
+    }
+  }
+}

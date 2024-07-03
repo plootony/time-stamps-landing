@@ -1,5 +1,6 @@
 .hero {
   margin-top: $spacing-lg * 2;
+  padding-top: 98px;
 
   &__body {
     display: flex;
@@ -31,6 +32,12 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4;
+  }
+
+  &__warning {
+    width: 70%;
+    font-size: 14px;
+    color: $color-grey;
   }
 
   &__media {
