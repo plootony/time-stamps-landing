@@ -1,5 +1,4 @@
 .audience {
-  margin-top: $spacing-lg;
 
   &__list {
     display: flex;
@@ -27,5 +26,11 @@
   &__item-title {
     font-size: 22px;
     font-weight: 400;
+  }
+
+  @include breakpoint-max(lg) {
+    &__list {
+      flex-direction: column;
+    }
   }
 }

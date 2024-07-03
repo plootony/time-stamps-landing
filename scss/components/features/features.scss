@@ -1,5 +1,4 @@
 .features {
-  margin-top: $spacing-xl * 2;
 
   &__list {
     display: flex;
@@ -32,5 +31,13 @@
   &__item-img {
     max-width: 100%;
     height: auto;
+  }
+
+  @include breakpoint-max(lg) {
+
+    &__list {
+      padding: 0 $spacing-md;
+      flex-direction: column;
+    }
   }
 }

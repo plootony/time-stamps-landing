@@ -1,11 +1,14 @@
 .header {
   padding: $spacing-md 0;
-  backdrop-filter: blur(10px);
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
+
+  @include breakpoint-min(lg) {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+  }
 
   &__body {
     display: flex;
@@ -18,19 +21,5 @@
     color: $color-white;
     font-size: 24px;
   }
-
-  &__menu-list {
-    display: flex;
-    align-items: center;
-  }
-
-  &__menu-link {
-    padding: $spacing-lg;
-    transition: color $transition-fast;
-
-    &.is-active,
-    &:hover {
-      color: $color-purple-dark;
-    }
-  }
 }
+

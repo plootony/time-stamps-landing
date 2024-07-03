@@ -7,4 +7,13 @@
     font-size: 64px;
     font-weight: 600;
   }
+
+  @include breakpoint-max(lg) {
+    padding: $spacing-lg 0;
+    justify-content: center;
+
+    &__title {
+      font-size: clamp(48px, 6vw, 64px);
+    }
+  }
 }

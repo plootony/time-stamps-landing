@@ -17,10 +17,18 @@ a {
 button {
   border: none;
   box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 ul {
   list-style: none;
+}
+
+.is-hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 html,
@@ -39,10 +47,11 @@ body {
 }
 
 .container {
+  padding: 0 $spacing-md;
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
-  min-width: 320px;
+  min-width: 375px;
 }
 
 .main {

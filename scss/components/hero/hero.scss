@@ -1,6 +1,5 @@
 .hero {
-  margin-top: $spacing-lg * 2;
-  padding-top: 98px;
+  margin-top: 100px;
 
   &__body {
     display: flex;
@@ -50,6 +49,41 @@
       position: absolute;
       right: 4px;
       bottom: -100px;
+    }
+  }
+
+  @include breakpoint-max(lg) {
+    margin-top: $spacing-lg;
+    padding: 0;
+
+    &__body {
+      flex-direction: column-reverse;
+    }
+
+    &__media {
+      margin-bottom: 50px;
+
+      img:nth-child(2) {
+        bottom: -50px;
+        max-width: 35%;
+      }
+    }
+
+    &__info {
+      align-items: center;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: clamp(29px, 1vw, 36px);
+    }
+
+    &__subtitle {
+      font-size: clamp(16px, 0.3vw, 20px);
+    }
+
+    &__warning {
+      width: 100%;
     }
   }
 }

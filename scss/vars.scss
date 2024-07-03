@@ -16,3 +16,12 @@ $spacing-xl: 48px;
 // Transitions
 $transition-fast: .3s;
 $transition-slow: .5s;
+
+// Breakpoints
+$breakpoints: (
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1440px
+);

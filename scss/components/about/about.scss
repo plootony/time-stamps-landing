@@ -1,5 +1,4 @@
 .about {
-  margin-top: $spacing-lg;
 
   &__body {
     display: flex;
@@ -10,6 +9,10 @@
 
   &__info {
     font-size: 18px;
+
+    @include breakpoint-max(lg) {
+      font-size: 16px;
+    }
 
     p {
       margin-bottom: $spacing-md;
